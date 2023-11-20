@@ -1,0 +1,19 @@
+on: 
+  push:
+    branches:
+      - main
+name: Test Deploy
+jobs:
+  FTP-Deploy-Action: 
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: files.000webhost.com
+        username: xanderitsme-practice-project
+        password: ${{ secrets.FTP_PASSWORD }}

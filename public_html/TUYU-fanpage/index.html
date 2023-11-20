@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>PROFILE | TUYU Official Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/TUYU.jpg">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/header.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="logo" src="img/logo_en.png" alt="「ツユ」">
+        </h1>
+        <p>This page has been created for practice purposes</p>
+        <!-- <nav>
+            <a href="#profile"><button>Profile</button></a>
+            <a href="#members"><button>Members</button></a>
+            <a href="#activity-history"><button>Activity history</button></a>
+        </nav> -->
+    </header>
+    
+    <main>
+        <div class="content">
+            <div class="profile-box">
+                <h1>PROFILE</h1>
+                <section>
+                    <img src="img/TUYU.jpg" alt="TUYU band's logo">
+                    <article>
+                        <h2>TUYU</h2>
+                        <p>A music unit consisting of Pusu on guitar and in charge of composing the songs, Rei as vocals, and miro on piano. The group was formed on June 12, 2019. Its name comes from the Japanese word for “rainy season” during which it was formed.</p>
+                        <p>Currently has over 1,100,000 YouTube subscribers. In addition to its showpiece titled “Compared Child” (tr. the girl who gets compared) that has had over 43million views, every music video that they've uploaded have been played over a million times. They're constantly ranked in both Japanese and foreign music distribution sites and appear in their popular playlists. A group of artists to keep an eye on with many fans around the world.</p>
+                    </article>
+                </section>
+            </div>
+
+            <h2>Members</h2>
+            <ul>
+                <li>Guitarist and composer: Pusu</li>
+                <li>Singer: Rei</li>
+                <li>Pianist: Miro</li>
+            </ul>
+
+            <div>
+                <button id="addMember">Add member</button>
+            </div>
+            
+            <dialog id="addMemberWindow" class="floating-window">
+                <h2>This section is under development</h2>
+                <p>Please get back later</p>
+                <button id="hide">Close</button>
+            </dialog>
+
+            <script>
+                window.addMember.addEventListener('click', () => {
+                    window.addMemberWindow.showModal();
+                })
+                window.hide.addEventListener('click', () => {
+                    window.addMemberWindow.close();
+                })
+            </script>
+
+            
+
+            <h2 id="activity-history">Activity history</h2>
+            <section>
+                <article>
+                    <h3>2023年</h3>
+                    <h4>March</h4>
+                    <p>performed TUYU ONE-MAN LIVE “HARUSHIGURE” at Zepp Haneda(TOKYO) in Tokyo [daytime -HARE-][nighttime -AME-].</p>
+                </article>
+                <article>
+                    <h3>2022年</h3>
+                    <h4>June</h4>
+                    <p>performed its fifth solo concert “AMAMOYO” (tr. rainy weather) at Hibiya Open-Air Concert Hall in Tokyo .</p>
+                    <h4>October</h4>
+                    <p>performed “TUYU LIVE TOUR 2022” at Zepp Fukuoka in Fukuoka at Zepp Namba(OSAKA) in Osaka at Zepp Sapporo in Hokkaido at Zepp Nagoya in Aichi at SENDAI GIGS in Miyagi at Zepp DiverCity(TOKYO) in Tokyo [LUNCH SESSION][NIGHT SESSION].</p>
+                </article>
+                <article>
+                    <h3>2021年</h3>
+                    <h4>March</h4>
+                    <p>performed its second solo concert “Soredemo Ameha Furundane” at TSUTAYA O-EAST in Tokyo and Umeda CLUB QUATTRO in Osaka.</p>
+                    <h4>July</h4>
+                    <p>released its second full album “I'll put you in misery” (tr. I'll invite you to misfortune) performed its third solo concert ““I'll put you in misery”” at Zepp Tokyo in Tokyo.</p>
+                    <h3>November</h3>
+                    <p>performed its fourth solo concert “If there was an Endpoint.” (tr. if there's something beyond the last stop) at Zepp DiverCity in Tokyo and Zepp Namba in Osaka.</p>
+                </article>
+                <article>
+                    <h3>2020年</h3>
+                    <h4>February</h4>
+                    <p>released its first full album It's Raining After All. (tr. it rains after all).</p>
+                    <h4>March</h4>
+                    <p>performed its first solo concert “It's Raining After All.” at SELENE b2 in Shirokane-Takanawa, Tokyo.</p>
+                </article>
+                <article>
+                    <h3>2019年</h3>
+                    <h4>June</h4>
+                    <p>TUYU was formed.</p>
+                </article>
+            </section>
+            
+        </div>
+    </main>
+
+    <footer>
+        <small>©2023 TUYU All rights Reserved.</small>
+    </footer>
+
+</body>
+</html>
