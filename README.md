@@ -7,11 +7,10 @@
   <li>Javascript</li>
   <li>coming soon . . .</li>
 </ul>
-<hr>
 <h3>Projects:</h3>
 <h4>Under development</h4>
 <ul>
-  <li>TUYU-fanpage (cloned page)</li>
+  <li>TUYU-fanpage (clone page)</li>
 </ul>
 <h4>Future ideas</h4>
 <ul>
