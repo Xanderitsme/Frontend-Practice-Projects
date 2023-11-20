@@ -12,46 +12,43 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 260px;
+    padding-top: 266px;
 }
 .content {
     width: 1000px;
-    min-width: 200px;
+    min-width: 100px;
+    margin: 0px 40px;
+    overflow: hidden;
 }
-.profile-box {
-    display: inline;
-    border: inherit;
-    width: inherit;
-    min-width: inherit;
-    height: auto;
-}
-.profile-box h1 {
+.content h1 {
     font-weight: 400;
     letter-spacing: 0.4em;
     color: #745bc7;
 }
-.profile-box section {
-    width: 100%;
-    height: auto;
-    margin-top: 80px;
+.profile-box {
+    margin-top: 90px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    /* padding: 55px 80px; */
+    gap: 30px;
 }
-.profile-box img {
-    height: 370px;
-    aspect-ratio: 1000/1000;
-    /* flex-grow: 1; */
-    /* flex-shrink: 1; */
-    /* flex-basis: auto; */
+.image-container {
+    /* padding: 0px 20px; */
+    flex: 1;
+    width: 370px;
+    min-width: 250px;
+    max-width: 368px;
 }
-.profile-box section article {
-    display: inline;
+.image-container img {
+    width: 100%;
+}
+.profile-box article {
     font-size: 0.92em;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.03em;
-    padding-left: 30px;
-    max-width: 390px;
-    min-width: 200px;
-    line-height: 1.6em;
+    line-height: 1.7em;
+    flex: 1;
+    min-width: 250px;
+    max-width: 402px;
 }
