@@ -1,0 +1,59 @@
+body {
+    margin: 0 ;
+    background-color: hsl(0, 0%, 15%);
+}
+main {
+    padding: 0px 40px;
+}
+.container {
+    /* overflow: hidden; */
+    background-color: hsl(0, 0%, 40%);
+    margin: 80px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    padding: 20px;
+}
+/* .container img {
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+} */
+.container div {
+    background-color: hsl(0, 0%, 30%);
+    border: 5px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    color: white;
+    font-size: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container div:first-child {
+    background-color: hsl(240, 60%, 50%);
+    /* grid-column-start: span 2; */
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+.container div:nth-child(2) {
+    background-color: hsl(180, 60%, 50%);
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.container div:nth-child(3) {
+    background-color: hsl(0, 0%, 0%);
+}
+.container div:nth-child(4) {
+    background-color: hsl(120, 60%, 50%);
+    grid-row: 1 / 4;
+    grid-column: 3 / 4;
+}
+.container div:nth-child(5) {
+    background-color: hsl(60, 60%, 50%);
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}

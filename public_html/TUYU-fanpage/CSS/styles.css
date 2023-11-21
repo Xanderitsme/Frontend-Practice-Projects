@@ -7,10 +7,12 @@ body {
     background-position: left top;
     font-family: Inter;
     min-height: 1000px;
+    height: 100vh;
+    overflow: auto;
 }
 main {
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: center;
     padding-top: 266px;
 }
@@ -47,7 +49,7 @@ main {
     font-size: 0.92em;
     font-weight: 400;
     letter-spacing: 0.03em;
-    line-height: 1.7em;
+    line-height: 1.63em;
     flex: 1;
     min-width: 250px;
     max-width: 402px;
