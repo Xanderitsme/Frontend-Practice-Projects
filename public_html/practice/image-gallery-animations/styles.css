@@ -4,12 +4,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 section {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    /* columns: 5;
+    gap: 20px; */
+    columns: 5;
     padding: 20px 30px;
-    column-gap: 20px; */
+    column-gap: 20px;
 }
 section img {
     border-radius: 10px;
