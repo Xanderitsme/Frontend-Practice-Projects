@@ -8,9 +8,6 @@
 </head>
 <body>
     <main>
-        <a href="../index.html">
-            <button>Go back</button>
-        </a>
         <div class="container">
             <h1 class="title">Title</h1>
             <div class="content-box">
@@ -26,5 +23,34 @@
             </div>
         </div>        
     </main>
+    
+    <style>
+        #back-button {
+            position: fixed;
+            right: 0;
+            top: 0;
+            background-color: black;
+            color: white;
+            border: none;
+            border-bottom-left-radius: 20px;
+            font-size: 30px;
+            padding: 0px 30px 5px 10px;
+            display: block;
+            opacity: 0.4;
+            transition: 0.5s;
+            z-index: 10;
+
+            &:hover {
+            background-color: white;
+            color: black;
+            outline: 1px solid black;
+            opacity: 1;
+            scale: 1.2;
+            }
+        }
+    </style>
+    <a href="../index.html">
+        <button id="back-button">Go back</button>
+    </a>
 </body>
 </html>

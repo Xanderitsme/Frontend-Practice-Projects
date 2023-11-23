@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+main {
+    padding: 20px;
+}
+#progress-bar {
+    background-color: black;
+    height: 20px;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    animation: progress-animation auto linear;
+    animation-timeline: scroll(root block);
+}
+@keyframes progress-animation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

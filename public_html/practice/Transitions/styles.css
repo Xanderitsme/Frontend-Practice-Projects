@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 80vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+section p {
+    width: 120px;
+}
+section {
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    gap: 40px;
+    justify-content: left;
+    padding: 20px;
+    align-items: center;
+    width: 600px;
+    height: 200px;
+}
+section:hover .pulser {
+    opacity: 1;
+}
+.pulser {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(200, 100%, 50%);
+    border-radius: 100%;
+    position: relative;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.pulser:hover {
+    scale: 1.5;
+    background-color: hsl(260, 100%, 50%);
+}
+.pulser:first-child {
+    transition-delay: 0s;
+}
+.pulser:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.pulser:nth-child(3) {
+    transition-delay: 0.4s;
+}

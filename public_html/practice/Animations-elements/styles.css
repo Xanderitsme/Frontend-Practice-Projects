@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    display: grid;
+    place-content: center;
+    min-height: 80vh;
+}
+img {
+    width: 200px;
+    /* animation-name: mover;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+
+    animation: 
+        mover 1s linear normal both,
+        crecer 1s linear 1s both;
+    transform: rotateY(180deg);
+}
+@keyframes mover {
+    80% {
+        transform: translateX(500px) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(500px) rotateY(0deg);
+    }
+}
+@keyframes crecer {
+    100% {
+        scale: 1.5;
+    }
+}
+.suelo {
+    background-color: hsl(0, 0%, 0%);
+    width: 700px;
+    height: 200px;
+}

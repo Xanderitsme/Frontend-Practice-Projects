@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
-    <title>PROFILE | TUYU Unofficial Website</title>
+    <title>Scroll animations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/TUYU.jpg">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="https://tuyu-official.jp/en/profile/">
-                <img class="logo" src="img/logo_en.png" alt="「ツユ」">
-            </a>
-        </h1>
-        <p>
-            This page has been created for practice purposes, I would like you to visit -> 
-            <a target="_blank" href="https://tuyu-official.jp/en/profile/">TUYU Official website</a>
-        </p>
-        
-        <!-- <nav>
-            <a href="#profile"><button>Profile</button></a>
-            <a href="#members"><button>Members</button></a>
-            <a href="#activity-history"><button>Activity history</button></a>
-        </nav> -->
-    </header>
-    
+    <div id="progress-bar"></div>
+    <p>Disclaimer: It isn't works on firefox</p>
     <main>
         <div class="content">
             <h1>PROFILE</h1>
@@ -51,24 +34,6 @@
             <div>
                 <button id="addMember">Add member</button>
             </div>
-            
-            <dialog id="addMemberWindow" class="floating-window">
-                <h2>This section is under development</h2>
-                <p>Please get back later</p>
-                <button id="hide">Close</button>
-            </dialog>
-
-            <script>
-                window.addMember.addEventListener('click', () => {
-                    window.addMemberWindow.showModal();
-                })
-                window.hide.addEventListener('click', () => {
-                    window.addMemberWindow.close();
-                })
-            </script>
-
-            
-
             <h2 id="activity-history">Activity history</h2>
             <section>
                 <article>
@@ -112,7 +77,7 @@
     <footer>
         <small>©2023 TUYU All rights Reserved.</small>
     </footer>
-
+    
     <style>
         #back-button {
             position: fixed;
