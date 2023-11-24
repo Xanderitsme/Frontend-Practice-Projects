@@ -20,6 +20,10 @@ section img {
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
+
+    transition: 0.4s;
+
+    &:hover { scale: 1.06; }
 }
 h1 {
     color: white;
@@ -33,7 +37,7 @@ h1 {
     z-index: 1;
 
     animation: enhance-header linear both;
-    animation-timeline: scroll(root block);
+    animation-timeline: scroll(block root);
     animation-range: 0px 200px;
 }
 @keyframes enhance-header {
