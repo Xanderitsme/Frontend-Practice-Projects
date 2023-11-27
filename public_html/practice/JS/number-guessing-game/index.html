@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number guessing game</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>Number Guessing Game</h1>
+            <p>Set a range:</p>
+            <label for="minValue">Min </label>
+            <input type="text" id="minValue"><br>
+
+            <label for="maxValue">Max </label>
+            <input type="text" id="maxValue"><br><br>
+
+            <label for="playerNum">Enter a num </label>
+            <input type="text" id="playerNum"><br>
+            <label id="playerHelp"></label><br><br>
+
+            <button type="button" id="testNum">Test num</button>
+            <button type="button" id="newGame">New Game</button><br><br>
+
+            <label id="playerMessage"></label><br>
+            <label id="attemps"></label>
+
+            <!-- Comment line below if you don't want to see the random number -->
+            <!-- <label id="randomNum"></label> -->
+
+            <style>
+                #back-button {
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    border-bottom-left-radius: 20px;
+                    font-size: 30px;
+                    padding: 0px 30px 5px 10px;
+                    display: block;
+                    opacity: 0.4;
+                    transition: 0.5s;
+                    z-index: 10;
+                    
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                        box-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+                        opacity: 1;
+                        animation: increase-button 0.7s ease-in-out infinite alternate both;
+                    }
+                }
+                @keyframes increase-button {
+                    to { scale: 1.2; }
+                }
+            </style>
+            <a href="../index.html">
+                <button id="back-button">Go back</button>
+            </a>
+        </div>
+    </body>
+</html>

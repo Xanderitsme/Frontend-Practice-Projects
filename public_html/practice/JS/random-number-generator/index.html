@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random number generator</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        
+        <div>
+            <label>Min value:</label>
+            <input type="text" id="min"><br>
+            <label>Max value:</label>
+            <input type="text" id="max"><br>
+    
+            random number1: <label id="aLabel"></label><br>
+            <!-- random number2: <label id="bLabel"></label><br>
+            random number3: <label id="cLabel"></label><br>
+            random number4: <label id="dLabel"></label><br>
+            random number5: <label id="eLabel"></label><br> -->
+        </div>
+
+        <div id="controls">
+            <button type="button" id="rollButton">roll</button>
+        </div>
+
+        <style>
+            #back-button {
+                position: fixed;
+                right: 0;
+                top: 0;
+                background-color: black;
+                color: white;
+                border: none;
+                border-bottom-left-radius: 20px;
+                font-size: 30px;
+                padding: 0px 30px 5px 10px;
+                display: block;
+                opacity: 0.4;
+                transition: 0.5s;
+                z-index: 10;
+                
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    box-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+                    opacity: 1;
+                    animation: increase-button 0.7s ease-in-out infinite alternate both;
+                }
+            }
+            @keyframes increase-button {
+                to { scale: 1.2; }
+            }
+        </style>
+        <a href="../index.html">
+            <button id="back-button">Go back</button>
+        </a>
+    </body>
+</html>

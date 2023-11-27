@@ -2,25 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Layout page using grid</title>
+    <title>Animations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="container">
-        <header>
-            This is the header
-        </header>
-        <aside>
-            This is the aside
-        </aside>
-        <main>
-            This is the main content
-        </main>
-        <footer>
-            This is the footer
-        </footer>
-    </section>
+    <div class="pulser"></div>
 
     <style>
         #back-button {
@@ -37,14 +24,17 @@
             opacity: 0.4;
             transition: 0.5s;
             z-index: 10;
-
+            
             &:hover {
-            background-color: white;
-            color: black;
-            outline: 1px solid black;
-            opacity: 1;
-            scale: 1.2;
+                background-color: white;
+                color: black;
+                box-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+                opacity: 1;
+                animation: increase-button 0.7s ease-in-out infinite alternate both;
             }
+        }
+        @keyframes increase-button {
+            to { scale: 1.2; }
         }
     </style>
     <a href="../index.html">
