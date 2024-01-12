@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Theme selector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="#">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <button id="changeThemeButton">Change theme</button>
+
+  <input type="text" id="myText" placeholder="Text on me to change the theme">
+
+  <div id="darkHover">
+    Hover on me to preview other theme
+  </div>
+
+  <style>
+    #back-button {
+      position: fixed;
+      right: 0;
+      top: 0;
+      background-color: black;
+      color: white;
+      border: none;
+      border-bottom-left-radius: 20px;
+      font-size: 30px;
+      padding: 0px 30px 5px 10px;
+      display: block;
+      opacity: 0.4;
+      transition: 0.5s;
+      z-index: 10;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0px 0px 20px hsl(0, 0%, 0%);
+        opacity: 1;
+        animation: increase-button 0.7s ease-in-out infinite alternate both;
+      }
+    }
+
+    @keyframes increase-button {
+      to {
+        scale: 1.2;
+      }
+    }
+  </style>
+  <a href="../index.html">
+    <button id="back-button">Go back</button>
+  </a>
+</body>
+
+</html>
