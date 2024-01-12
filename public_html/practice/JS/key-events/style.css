@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  z-index: 1;
+}
+
+#square {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: #f05;
+}
